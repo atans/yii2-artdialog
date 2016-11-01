@@ -28,8 +28,19 @@ Usage
 [Artdialog Official Docs](http://aui.github.io/artDialog/doc/index.html)
 
 ```php
-    // views/site/index.php
+<?php
+// views/site/index.php
 
-    'modules' => [
-        'rbac' => 'atans\rbac\Module',
-    ],
+use atans\artdialog\ArtdialogAsset;
+  
+ArtdialogAsset::register($this);
+
+$js = <<< JS
+var d = dialog({
+    title: "Yii2 Artdialog",
+    content: "Hello World!"
+}).show();
+JS;
+
+// register your javascript
+$this->registerJs($js);
