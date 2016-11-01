@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class ArtdialogAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/atans/yii2-artdialog';
+    public $sourcePath = '@vendor/atans/yii2-artdialog/assets';
     public $css = [
         'css/ui-dialog.css',
     ];
