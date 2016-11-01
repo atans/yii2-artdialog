@@ -12,6 +12,7 @@ class ArtdialogAsset extends AssetBundle
     ];
     public $js = [
         'js/dialog.js',
+        'js/dialog-plus.js',
     ];
     public $depends = [
         'yii\web\JqueryAsset',
